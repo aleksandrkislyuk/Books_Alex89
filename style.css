@@ -1,0 +1,148 @@
+html {
+  background-color: skyblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: rgb(49, 41, 151);
+  text-align: center;
+}
+
+body {
+    background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1rem 1rem 2rem #082424;
+  font-size: 15px;
+  border-radius: 0.5rem;
+}
+
+#bookForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem #082424;
+  margin: 0.5rem;
+}
+
+#status {
+  display: inline-flex;
+  position: relative;
+  font-size: 13px;
+  color: #1d1c1c;
+  line-height: 1;
+  width: 8.0em;
+  height: 1.65em;
+}
+
+#button_save {
+  background-color: #3634a4;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 1rem 1rem 2rem #050808;
+  color: aliceblue;
+}
+
+#button_change {
+  background-color: #eedf58;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 1rem 1rem 2rem #050808;
+}
+
+#button_delete {
+  background-color: #f06d63;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 1rem 1rem 2rem #050808;
+}
+
+#bookStats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(96, 203, 194);
+  color: rgb(15, 15, 15);
+  padding: 0.1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 1rem 1rem 2rem #082424;
+}
+
+#button_read, #button_notRead, #button_remove {
+  background-color: #78c0f0;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 1rem 1rem 2rem #050808;
+  color: rgb(14, 14, 16);
+  width: 8.0em;
+  height: 1.65em;
+  
+}
+
+#stats, #list, #buttonStatus {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#button_deleteArray {
+  background-color: #f704c3;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 1rem 1rem 2rem #050808;
+  color: rgb(178, 213, 243);
+}
+
+#button_filter {
+  background-color: #5feb30;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 1rem 1rem 2rem #050808;
+  color: rgb(27, 29, 31);
+}
+
+#bookList {
+  margin: 1rem;
+  background-color: rgb(85, 214, 214);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 1rem 1rem 2rem #082424;
+}
+
+#book {
+  background-color: rgb(251, 251, 235);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem #808080a9;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(65, 59, 152);
+  text-align: right;
+  color: rgb(192, 195, 197);
+  padding: 0.1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 1rem 1rem 2rem #082424;
+}
+
+
+
+
+
+

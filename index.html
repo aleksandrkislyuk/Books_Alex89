@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VScode_#5_A_Kislyuk</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Библиотека</h1>
+  <form id="bookForm">
+    <label for="title">Название книги:</label><br>
+    <input type="text" id="title" required><br>
+    <label for="author">Автор:</label><br>
+    <input type="text" id="author" required><br>
+    <label for="year">Год издания:</label><br>
+    <input type="number" id="year" min="1500" max="2023" required><br>
+    <label for="genre">Жанр:</label><br>
+    <input type="text" id="genre" required><br>
+    <label for="status">Статус:</label><br>
+    <select id="status">
+      <option value="Не прочитана">Не прочитана</option>
+      <option value="Да, прочитана">Да, прочитана</option>
+    </select><br>
+    <button id="button_save" type="submit" onclick="add_Book()">Добавить книгу</button>
+  </form>
+  <hr>
+  <div id="bookList">
+    <!-- Список книг -->
+  </div>
+  <hr>
+  <section id="bookStats">
+    <div>
+      <h2>Общая статистика:</h2>
+      <ul id="stats">
+        <li id="allList">Всего книг: <span id="totalCount"></span></li>
+        <li id="readList">Прочитано: <span id="read" name="Прочитано:"></span></li>
+        <li id="notReadList">Не прочитано: <span id="notRead" name="Не прочитано:"></span></li>
+      </ul>
+    </div>
+    <div id="buttonStatus">
+      <!--button id="button_read">Прочитано:</button>
+      <button id="button_notRead">Не прочитано:</button-->
+      
+    </div>
+    <div>
+      <h2>Список книг:</h2>
+      <ul>
+        <output id="list" name="Список книг"></output>
+      </ul>
+    </div>
+  </section>
+
+  </div>
+  <hr>
+
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <button id="button_deleteArray"onclick="delete_Book()">Удалить все книги</button>
+  <input type="text" id="filterBooks" placeholder="Поиск по названию..." oninput="filterBooks()">
+  <input type="text" id="filter_Books" placeholder="Поиск по статусу..." oninput="filter_Books()">
+  <button id="button_remove" onclick="window.location.reload()">Обновить:</button>
+</footer>
+
+</html>
